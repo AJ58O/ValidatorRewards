@@ -1,5 +1,5 @@
 # ValidatorRewards
-An XRP community initiative to incentivize validators
+An XRP community initiative to incentivize good validator behavior
 
 ### How this app works:
 
