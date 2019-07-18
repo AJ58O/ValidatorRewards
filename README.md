@@ -8,6 +8,16 @@ An XRP community initiative to incentivize good validator behavior
 3. test.py pulls payment pointers and node public keys from the config file, gets a report for the past 24 hours, if the validator is good, adds them to a trigger files. 
 4. Reward.sh reads the reward amount and payment pointers from files and runs an ilp-spsp send on each of the payment pointers.
 
+### What defines good behavior?
+
+Currently the App looks for 3 features:
+
+1. Validating on the main net
+2. Agreement score of 1
+3. 0 missed ledgers
+
+If you have other ideas, please let me know.
+
 ### Adding your validator
 
 Config.py includes an object formatted like this:
