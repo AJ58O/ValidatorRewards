@@ -47,3 +47,6 @@ $ cd ValidatorRewards
 $ docker build test .
 $ docker run test
 ```
+
+
+UPDATE: I've added new stuff, the payment stuff isn't dockerized but I have an app that works locally. Will use this on a CRON until I can dockerize everything
