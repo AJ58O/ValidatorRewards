@@ -37,3 +37,13 @@ Distribute daily/whatever time period bounty equally between them
 
 
 Initially the bounties will be small because I'll probably be self funding the wallet. If others contribute, that'd be gucci. Not going to post the wallet address until the app is finished. Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
+
+
+Installation/Running:
+
+```
+$ git clone https://github.com/AJ58O/ValidatorRewards.git
+$ cd ValidatorRewards
+$ docker build test .
+$ docker run test
+```
