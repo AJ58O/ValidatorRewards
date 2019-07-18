@@ -3,10 +3,10 @@ An XRP community initiative to incentivize validators
 
 ### How this app currently works:
 
-1. validator data will be retreived thorugh the XRPL data API (https://xrpl.org/data-api.html). These functions are included in rippleStats.py
-2. logic surrounding what makes a good validator is included in validatorScoreCard.py. ultimately, all business logic should be encapsulated in the grep_all function.
-3. test.py is where I've been testing these functions. Currently test.py pulls payment pointers and node public keys from the config file, gets a report for the past 24 hours, makes sure they were good, and if so, adds them to a trigger files. 
-4. Reward.sh is where I pull the reward (which is the bounty, currently .1XRP, floor divided by the number of good validators), and the payment pointers of the good validators from the trigger files, then run an ilp-spsp send command to each of the payment pointers.
+1. Validator data is retreived thorugh the XRPL data API (https://xrpl.org/data-api.html). These functions are included in rippleStats.py
+2. logic determining what makes a good validator is included in validatorScoreCard.py. All business logic is executed in the grep_all function
+3. test.py pulls payment pointers and node public keys from the config file, gets a report for the past 24 hours, if the validator is good, adds them to a trigger files. 
+4. Reward.sh reads the reward amount and payment pointers from files and runs an ilp-spsp send on each of the payment pointers.
 
 ### Adding your validator
 
