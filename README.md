@@ -1,7 +1,7 @@
 # ValidatorRewards
 An XRP community initiative to incentivize validators
 
-### How this app currently works:
+### How this app works:
 
 1. Validator data is retreived thorugh the XRPL data API (https://xrpl.org/data-api.html). These functions are included in rippleStats.py
 2. logic determining what makes a good validator is included in validatorScoreCard.py. All business logic is executed in the grep_all function
