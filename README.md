@@ -5,48 +5,31 @@ This repo is still under construction. Here is how this app currently works:
 
 1. validator data will be retreived thorugh the XRPL data API (https://xrpl.org/data-api.html). These functions are included in rippleStats.py
 2. logic surrounding what makes a good validator is included in validatorScoreCard.py. ultimately, all business logic should be encapsulated in the grep_all function.
-3. test.py is where I've been testing these functions
+3. test.py is where I've been testing these functions. Currently test.py pulls payment pointers and node public keys from the config file, gets a report for the past 24 hours, makes sure they were good, and if so, adds them to a trigger file. 
+4. Reward.sh is where I pull the reward (which is the bounty, currently .1XRP and floor divide it by the number of good validators), and the payment pointers of the good validators, then run an ilp-spsp send command to each of the payment pointers.
 
-Here's what still needs to be added:
-
-1. ILP module-- this is jenky, I'm probably going to do this in bash tbh. sorry bout it. If someone wants to port everything over to JS, by all means go for it. Shouldn't be too hard. I'm just a masochist.
-  A. Need to add all dependencies to the docker file.
-  B. Needs to accept a secret/pubkey as an env var
-
-
-Ultimately I envision a list of good validators being returned each day (maybe look at historical reports using the get_validator_report function with a start of x days), and those validators receiving a bounty.
-
-To deliver the funds, I'll need a payment pointer. I think I'm going to have a static config object that is like this:
+Config.py includes an object formatted like this:
 
 ```
 {
-    {{publicKey}}:{{paymentPointer}}
+    publicKey:paymentPointer
 }
 ```
-Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. 
-
-Sorry for the rambles, this is all intoxicated stream of conscious. here's the final workflow I'm settling on:
-```
-Get config
-Get all pub keys in config object
-Do validator checks (get daily report, look at agreement, missed ledgers, if there's a way to check uptime do that too, etc. Need to decide business logic around this, need community input)
-Find the top performers (need to set threshholds, also need community input)
-Distribute daily/whatever time period bounty equally between them
-```
+Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. Alternatively, if I know you already, you can DM me on twitter or submit a pull request.
 
 
-
-Initially the bounties will be small because I'll probably be self funding the wallet. If others contribute, that'd be gucci. Not going to post the wallet address until the app is finished. Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
+Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
 
 
 Installation/Running:
 
+If you don't ahve moneyd installed and configured yet, you will need to do that. Here's an extremely overkill script that can help you do that: https://github.com/AJ58O/K-ILP-it-with-fire
+
 ```
 $ git clone https://github.com/AJ58O/ValidatorRewards.git
 $ cd ValidatorRewards
-$ docker build test .
-$ docker run test
+$ pip3 install requirements.txt
+$ bash run.sh
 ```
 
-
-UPDATE: I've added new stuff, the payment stuff isn't dockerized but I have an app that works locally. Will use this on a CRON until I can dockerize everything
+Still trying to dockerize everything. Long term plan is to deploy this onto codius.
