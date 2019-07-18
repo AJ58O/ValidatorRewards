@@ -78,10 +78,11 @@ class RippleStats:
 		report_list = []
 		for v in validators:
 			try:
-				report_list += [x for x in get_validator_report(v)["reports"]]
+				report_list += [x for x in self.get_validator_report(v)["reports"]]
 			except Exception as e:
 				print("ERROR GETTING VALIDATOR REPORT")
 				print(e)
+		print(report_list)
 		return report_list
 		
 

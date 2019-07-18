@@ -8,9 +8,9 @@ class ValidatorScoreCard:
 		RESPONSE: list of all validators with perfect agreement
 		"""
 		if return_list==False:
-			self.validators = [x for x in self.validators if float(x["agreement_24h"]["score"])==1]
+			self.validators = [x for x in self.validators if float(x["score"])==1]
 		else:
-			return [x for x in self.validators if float(x["agreement_24h"]["score"])==1]
+			return [x for x in self.validators if float(x["score"])==1]
 
 	def grep_no_misses(self, return_list=False):
 		"""
@@ -19,9 +19,9 @@ class ValidatorScoreCard:
 		RESPONSE: list of all validators with no misses
 		"""
 		if return_list==False:
-			self.validators = [x for x in self.validators if int(x["agreement_24h"]["missed"])==0]
+			self.validators = [x for x in self.validators if int(x["missed"])==0]
 		else:
-			return [x for x in self.validators if int(x["agreement_24h"]["missed"])==0]
+			return [x for x in self.validators if int(x["missed"])==0]
 
 	def grep_main_chain(self, return_list=False):
 		"""
