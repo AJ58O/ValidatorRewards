@@ -17,7 +17,13 @@ Config.py includes an object formatted like this:
     "publicKey":"paymentPointer"
 }
 ```
-Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. Alternatively, if I know you already, you can DM me on twitter or submit a pull request.
+
+1. Fork the repo
+2. Add your node/validator to the object in config.py
+3. Submit a pull request
+4. Offer some sort of proof that you own this validator
+
+If you don't know how to do 1-3, reach out to me on twitter: https://twitter.com/AJ58O
 
 
 ### Installation/Running:
