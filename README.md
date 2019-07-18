@@ -18,7 +18,7 @@ Config.py includes an object formatted like this:
 Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. Alternatively, if I know you already, you can DM me on twitter or submit a pull request.
 
 
-Installation/Running:
+###Installation/Running:
 
 If you don't have moneyd installed and configured yet, you will need to do that. Here's an extremely overkill script that can help you do that: https://github.com/AJ58O/K-ILP-it-with-fire
 
