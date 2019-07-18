@@ -23,7 +23,7 @@ Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
 
 Installation/Running:
 
-If you don't ahve moneyd installed and configured yet, you will need to do that. Here's an extremely overkill script that can help you do that: https://github.com/AJ58O/K-ILP-it-with-fire
+If you don't have moneyd installed and configured yet, you will need to do that. Here's an extremely overkill script that can help you do that: https://github.com/AJ58O/K-ILP-it-with-fire
 
 ```
 $ git clone https://github.com/AJ58O/ValidatorRewards.git
