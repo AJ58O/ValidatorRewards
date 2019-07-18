@@ -18,21 +18,21 @@ Ultimately I envision a list of good validators being returned each day (maybe l
 
 To deliver the funds, I'll need a payment pointer. I think I'm going to have a static config object that is like this:
 
-
+```
 {
     {{publicKey}}:{{paymentPointer}}
 }
-
+```
 Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. 
 
 Sorry for the rambles, this is all intoxicated stream of conscious. here's the final workflow I'm settling on:
-
+```
 Get config
 Get all pub keys in config object
 Do validator checks (get daily report, look at agreement, missed ledgers, if there's a way to check uptime do that too, etc. Need to decide business logic around this, need community input)
 Find the top performers (need to set threshholds, also need community input)
 Distribute daily/whatever time period bounty equally between them
-
+```
 
 
 
