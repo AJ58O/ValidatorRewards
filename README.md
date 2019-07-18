@@ -18,9 +18,6 @@ Config.py includes an object formatted like this:
 Getting your validator added will involve submitting a pull request with a comment, the comment must be a signed SHA256 message, decrypted using your public key. The message must be your ILP payment pointer. If you are able to successfully do that, I'll add you to the config. Alternatively, if I know you already, you can DM me on twitter or submit a pull request.
 
 
-Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
-
-
 Installation/Running:
 
 If you don't have moneyd installed and configured yet, you will need to do that. Here's an extremely overkill script that can help you do that: https://github.com/AJ58O/K-ILP-it-with-fire
@@ -35,3 +32,6 @@ $ bash run.sh
 Things to do:
 1. Still trying to dockerize everything.
 2. Test.py waits 15 seconds for moneyd to start up. It would be better for it to wait until the stdin shows the message "connector ready" or whatever the success message is.
+
+
+Want to contirbute? DM me on twitter: https://twitter.com/AJ58O
