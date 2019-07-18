@@ -32,4 +32,4 @@ $ pip3 install requirements.txt
 $ bash run.sh
 ```
 
-Still trying to dockerize everything. Long term plan is to deploy this onto codius.
+Still trying to dockerize everything.
