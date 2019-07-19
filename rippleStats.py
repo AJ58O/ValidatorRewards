@@ -85,4 +85,3 @@ class RippleStats:
 		print(report_list)
 		return report_list
 		
-
