@@ -12,7 +12,8 @@ class ilpTrigger:
 		reward=bounty * unit // len(validators)
 		validators_as_string = ""
 		for v in validators:
-			validators_as_string+="{0}\n".format(v)
+			if not v in validators_as_string:
+				validators_as_string+="{0}\n".format(v)
 		with open('reward.txt', 'w') as logfile:
 			logfile.write(str(reward))
 		with open('validators.txt', 'w') as logfile:
