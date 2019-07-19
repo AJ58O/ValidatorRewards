@@ -34,4 +34,7 @@ def get_config():
 		"nHUwGQrfZfieeLFeGRdGnAmGpHBCZq9wvm5c59wTc2JhJMjoXmd8":"$twitter.xrptipbot.com/XrpGoat",
 		"nHUvcCcmoH1FJMMC6NtF9KKA4LpCWhjsxk2reCQidsp5AHQ7QY9H":"$twitter.xrptipbot.com/jonaagenilsen",
 		"nHBSUZJnqK5BRu3bWAmebfkETNeEFmU7sm3DXzCuEYzRkAEdxuTy":"$twitter.xrptipbot.com/xrpchat",
+		"nHUryiyDqEtyWVtFG24AAhaYjMf9FRLietbGzviF3piJsMm9qyDR":"$twitter.xrptipbot.com/bitrueofficial",
+		"nHUFzkFDxi4HLQ5XjqxBpbwCankpZ1673m5QQTf8c2sUSbUgG1he":"$twitter.xrptipbot.com/ZerpHound",
+		"nHUvzia57LRXr9zqnYpyFUFeKvis2tqn4DkXBVGSppt5M4nNq43C":"$twitter.xrptipbot.com/DigifinU",
 	}
