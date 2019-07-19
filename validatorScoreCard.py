@@ -57,3 +57,4 @@ class ValidatorScoreCard:
 		returns self.validators
 		"""
 		return self.validators
+	
