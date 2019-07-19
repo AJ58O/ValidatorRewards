@@ -20,10 +20,3 @@ class ilpTrigger:
 
 		sys.exit()
 		
-
-
-		
-
-		
-
-	
