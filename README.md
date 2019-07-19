@@ -51,6 +51,7 @@ $ bash run.sh
 
 1. Still trying to dockerize everything.
 2. Test.py waits 15 seconds for moneyd to start up. It would be better for it to wait until the stdin shows the message "connector ready" or whatever the success message is.
+3. Instead of the bash script being the entry point, make the python script start the bash script using os.subprocesses, then make it watch the stdout for the connector ready message, continue through the python script, then kick off another os.subprocess to start reward.sh (would this work?)
 
 
 **Want to contirbute?** DM me on twitter: https://twitter.com/AJ58O
