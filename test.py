@@ -18,4 +18,4 @@ good_validator_keys = vsc.grep_all(return_keys=True)
 good_validator_payment_pointers = [validator_config[x] for x in good_validator_keys]
 print(good_validator_payment_pointers)
 
-ilpTrigger(good_validator_payment_pointers, .1)
+ilpTrigger(good_validator_payment_pointers, .5)
