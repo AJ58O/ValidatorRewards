@@ -54,6 +54,7 @@ $ bash run.sh
 3. Instead of the bash script being the entry point, make the python script start the bash script using os.subprocesses, then make it watch the stdout for the connector ready message, continue through the python script, then kick off another os.subprocess to start reward.sh (would this work?)
 4. Port everything to node so that I can run moneyd/ilp without using bash
 5. Find and add other data sources (ideally the source should be my own rippled node)
+6. Automate bounty amount selection-- the daily bounty should be a function of (at least) market price and wallet balance.
 
 
 **Want to contirbute?** DM me on twitter: https://twitter.com/AJ58O
