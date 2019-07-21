@@ -38,4 +38,5 @@ def get_config():
 		"nHUFzkFDxi4HLQ5XjqxBpbwCankpZ1673m5QQTf8c2sUSbUgG1he":"$twitter.xrptipbot.com/ZerpHound",
 		"nHUvzia57LRXr9zqnYpyFUFeKvis2tqn4DkXBVGSppt5M4nNq43C":"$twitter.xrptipbot.com/DigifinU",
 		"nHUFv6LU6qWd3CFcdRSJ6kjwfG2zVNT8GUt3nK8zbWDGD1vVjyAp":"$twitter.xrptipbot.com/Leapingjag",
+		"nHBov951pcGV2TVEdBAMJqcEJJgFE1kmjQvoJJzLsxtjFXb9B7dM":"$twitter.xrptipbot.com/brascelido",
 	}
