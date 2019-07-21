@@ -40,4 +40,5 @@ def get_config():
 		"nHUFv6LU6qWd3CFcdRSJ6kjwfG2zVNT8GUt3nK8zbWDGD1vVjyAp":"$twitter.xrptipbot.com/Leapingjag",
 		"nHBov951pcGV2TVEdBAMJqcEJJgFE1kmjQvoJJzLsxtjFXb9B7dM":"$twitter.xrptipbot.com/brascelido",
 		"nHDpR4QmL1w5naZ4cY4YLmqsen8LD5U5VLHZgzJWqJZVrrPVnPQZ":"$twitter.xrptipbot.com/CoinGatecom",
+		"nHUDzgUzRF7i9cWwSYJ1fhWYMFvDHcLiUfpW1UhpkLsbN6YMw4Ay":"$twitter.xrptipbot.com/NicklausScheetz",
 	}
