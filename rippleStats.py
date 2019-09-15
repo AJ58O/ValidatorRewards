@@ -60,14 +60,14 @@ class RippleStats:
 		"""
 		
 		start = str((datetime.now() - timedelta(start)).isoformat()).split(".")[0] #yesterday
-		print(start)
 		url="{0}/v2/network/validators/{1}/reports".format(self.base_url, pubkey)
 		params = {
 			"start":start,
 			"end":end,
 			"descending":descending
 		}
-		return requests.get(url=url, params=params).json()
+		r = requests.get(url=url, params=params).json()
+		return r
 
 	def get_validator_reports_from_list(self, validators):
 		"""
@@ -80,8 +80,8 @@ class RippleStats:
 			try:
 				report_list += [x for x in self.get_validator_report(v)["reports"]]
 			except Exception as e:
-				print("ERROR GETTING VALIDATOR REPORT")
-				print(e)
-		print(report_list)
+				# print("COULDNT GET VALIDATOR REPORT FOR {0}".format(v))
+				# print(e)
+				continue
 		return report_list
 		
