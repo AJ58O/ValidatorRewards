@@ -37,7 +37,7 @@ If you don't know how to do 1-3, reach out to me on twitter: https://twitter.com
 
 ### Installation/Running:
 
-####Python3:
+**Python3:**
 ```
 $ git clone https://github.com/AJ58O/ValidatorRewards.git
 $ cd ValidatorRewards
@@ -45,7 +45,7 @@ $ export XRPTIPBOT_TOKEN={your token}
 $ python3 run.py
 ```
 
-####Docker
+**Docker**
 ```
 $ docker build -t validator-rewards
 $ docker run --env XRPTIPBOT_TOKEN={your token} validator-rewards
