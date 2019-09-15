@@ -2,4 +2,4 @@ FROM python:3.7
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-CMD ["python3", "-u", "test.py"]
+CMD ["python3", "-u", "run.py"]
