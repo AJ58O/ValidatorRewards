@@ -1,6 +1,6 @@
 def get_config():
 	return {
-		#"validator_public_key":"ilp_payment_pointer",
+		#"validator_public_key":"xrptipbot pointer",
 		"nHBTBhw1uasg6nGkw7ASNCrHjzG8x4Hr4PkE5qoLs83tWL2RTFJk":"xrptipbot://twitter/WietseWind",
 		"nHUcNC5ni7XjVYfCMe38Rm3KQaq27jw7wJpcUYdo4miWwpNePRTw":"xrptipbot://twitter/RabbitKickClub",
 		"nHB8QMKGt9VB4Vg71VszjBVQnDW3v3QudM4DwFaJfy96bj4Pv9fA":"xrptipbot://twitter/bithomp",
@@ -41,4 +41,19 @@ def get_config():
 		"nHBov951pcGV2TVEdBAMJqcEJJgFE1kmjQvoJJzLsxtjFXb9B7dM":"xrptipbot://twitter/brascelido",
 		"nHDpR4QmL1w5naZ4cY4YLmqsen8LD5U5VLHZgzJWqJZVrrPVnPQZ":"xrptipbot://twitter/CoinGatecom",
 		"nHUDzgUzRF7i9cWwSYJ1fhWYMFvDHcLiUfpW1UhpkLsbN6YMw4Ay":"xrptipbot://twitter/NicklausScheetz",
+		"nHU4Z66QzqCGRt5nRcCjot29fGDTyVCpQCbP1o1hfxVN1iktPrw6":"xrptipbot://twitter/hodler_of_xrp",
+		"nHUc1oUydQXz8RywoXwR9FDmcaoQ1oFKGG6GZ93oh5WMx6XoFYh9":"xrptipbot://twitter/hodler_of_xrp",
+		"n9L2hbxb9oJJyNjtFwLdVQSi6we63ZkWtKeGXoaBwRBhwAQRCfNq":"xrptipbot://twitter/Crypto_JO",
+		"nHBQR4HdyseNUpMbn1wdyHZNvcc66pPKSTejYT5v7SAHWwmEBn4u":"xrptipbot://twitter/omni",
+		"nHDDE4Y3z5EE2VDDYrzheYQ4xC3F29SJsKT4dqhX4iyTLhuWgZnp":"xrptipbot://twitter/CoinFieldEX",
+		"nHB2s2cW36CVFVmuQtyGqdqoM7Bx87E7LcuDn4Ed1HievaRtniNL":"xrptipbot://twitter/kompany",
+		"nHByQYQHHtYSh6kZqtkWB6oa6XQ59Cu2NbWc6gyS7WtyrmsAP2DF":"xrptipbot://twitter/kompany",
+		"nHDaFDnXzxau1m5MjsxnAyAdhKTgfePo2mGxJ5NaqZLeiHYm15X1":"xrptipbot://twitter/kompany",
+		"nHUDRJ5mrD8EuXHiU4hcZywgWSP2wdVQgTFLWSteLyjD5uf2yGZU":"xrptipbot://twitter/kompany",
+		"nHUnvN6FHvZMGjmVv27aeC4JN5m2RD6qbva1V5bf84ibjpXY3avc":"xrptipbot://twitter/kompany",
+		"nHUd8g4DWm6HgjGTjKKSfYiRyf8qCvEN1PXR7YDJ5QTFyAnZHkbW":"xrptipbot://twitter/kompany",
+		"nHBCbomMyURfxFiPAt8whWp4T83hrvosgCfrw693sGKT3xknwa7p":"xrptipbot://twitter/baltazar223",
+		"nHUULHeW7iP3cuB8BbczPWpgiSw9nyesZha9PUxjsMyqMgTJCWCp":"xrptipbot://twitter/CryptomOOniaK",
+		"nHUkp7WhouVMobBUKGrV5FNqjsdD9zKP5jpGnnLLnYxUQSGAwrZ6":"xrptipbot://twitter/WorldLinkUS",
+		"nHBcVRfZ5RTL5mUQcd5uBxkJ5Jz6HmWu9QMykuBoxdn1SCKUCcj7":"xrptipbot://twitter/InnoTec",
 	}
