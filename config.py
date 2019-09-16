@@ -54,6 +54,5 @@ def get_config():
 		"nHUd8g4DWm6HgjGTjKKSfYiRyf8qCvEN1PXR7YDJ5QTFyAnZHkbW":"xrptipbot://twitter/kompany",
 		"nHBCbomMyURfxFiPAt8whWp4T83hrvosgCfrw693sGKT3xknwa7p":"xrptipbot://twitter/baltazar223",
 		"nHUULHeW7iP3cuB8BbczPWpgiSw9nyesZha9PUxjsMyqMgTJCWCp":"xrptipbot://twitter/CryptomOOniaK",
-		"nHUkp7WhouVMobBUKGrV5FNqjsdD9zKP5jpGnnLLnYxUQSGAwrZ6":"xrptipbot://twitter/WorldLinkUS",
 		"nHBcVRfZ5RTL5mUQcd5uBxkJ5Jz6HmWu9QMykuBoxdn1SCKUCcj7":"xrptipbot://twitter/InnoTec",
 	}
