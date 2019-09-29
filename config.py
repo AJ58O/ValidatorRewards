@@ -17,7 +17,7 @@ def get_config():
 		"nHUXeusfwk61c4xJPneb9Lgy7Ga6DVaVLEyB29ftUdt9k2KxD6Hw":"xrptipbot://twitter/xrptipbot",
 		"nHUkp7WhouVMobBUKGrV5FNqjsdD9zKP5jpGnnLLnYxUQSGAwrZ6":"xrptipbot://twitter/WorldLinkUS",
 		"nHUnhRJK3csknycNK5SXRFi8jvDp3sKoWvS9wKWLq1ATBBGgPBjp":"xrptipbot://twitter/peerisland",
-		"nHBitBKM8YrU4JbeLuxD36p6dpwA9nKJv3i2Ejyt9cMMF6RQPgkK":"xrptipbot://twitter/MrFunkyMan1",
+		"nHUUoKx6x12K5DtWCeuy3AYT6qmi2J37yUriVRVmMixjaYbZ6WVC":"xrptipbot://twitter/MrFunkyMan1",
 		"nHBZ2zcrV6dUM5VkUfCMSeLkDWB1CrF36mHf8sh6jKKozvT9nzfn":"xrptipbot://twitter/empatogen",
 		"nHBZpi7meqMBF4Dy7JJKdinJF5jh7sgV3BKGruV8BFKCKJpr6ndc":"xrptipbot://twitter/kka72com",
 		"nHBF5dPyPQNGcUfuGy2NWuqJzob6fxkWfuMrNnUMwJavhSH3jBB9":"xrptipbot://twitter/thierryblais",
