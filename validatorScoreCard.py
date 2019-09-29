@@ -7,8 +7,10 @@ class ValidatorScoreCard:
 		@param return_list: bool, if true return_lists self.validators, otherwise updates self.validators
 		RESPONSE: list of all validators with perfect agreement
 		"""
+		start_list = self.validators
 		if return_list==False:
 			self.validators = [x for x in self.validators if float(x["score"])==1]
+			print("Filtered out for non-perfect agreement:\n{0}".format([x for x in start_list if x not in self.validators]))
 		else:
 			return [x for x in self.validators if float(x["score"])==1]
 
@@ -18,8 +20,10 @@ class ValidatorScoreCard:
 		@param return_list: bool, if true return_lists self.validators, otherwise updates self.validators
 		RESPONSE: list of all validators with no misses
 		"""
+		start_list = self.validators
 		if return_list==False:
 			self.validators = [x for x in self.validators if int(x["missed"])==0]
+			print("Filtered out for ledger misses:\n{0}".format([x for x in start_list if x not in self.validators]))
 		else:
 			return [x for x in self.validators if int(x["missed"])==0]
 
@@ -29,8 +33,10 @@ class ValidatorScoreCard:
 		@param return_list: bool, if true return_lists self.validators, otherwise updates self.validators
 		RESPONSE: list of all validators on main chain
 		"""
+		start_list = self.validators
 		if return_list==False:
 			self.validators = [x for x in self.validators if x["chain"]=="main"]
+			print("Filtered out for non main chain:\n{0}".format([x for x in start_list if x not in self.validators]))
 		else:
 			return [x for x in self.validators if x["chain"]=="main"]
 
