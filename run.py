@@ -1,5 +1,6 @@
 from validatorScoreCard import ValidatorScoreCard
 from rippleStats import RippleStats
+from pastebin import Pastebin
 from config import get_config
 import xrptipbotPy
 import os
@@ -19,7 +20,13 @@ except Exception as e:
 	print("export XRPTIPBOT_TOKEN")
 	sys.exit()
 
-def create_log(balance, amount, success, fail):
+try:
+	p = Pastebin(os.environ["PASTEBIN_TOKEN"])
+	pastebin_logging = True
+except:
+	pastebin_logging = False
+
+def create_log(balance, bounty, amount, success, fail):
 	t = datetime.datetime.now()
 	s = ""
 	for suc in success:
@@ -30,17 +37,18 @@ def create_log(balance, amount, success, fail):
 	message = """
 ---------------------------
 Runtime: {0}
-Amount: {1}
-Balance: {2}
+Bounty: {1}
+Amount: {2}
+Balance: {3}
 Success:
-{3}
+{4}
 
 ************
 Fail:
-{4}
+{5}
 ************
 ---------------------------
-	""".format(t, amount, balance, s, f)
+	""".format(t, bounty, amount, balance, s, f)
 	return message
 
 def bytes_to_json(byteString):
@@ -76,8 +84,13 @@ def main():
 			balance = t["data"]["balance"]["balance"]["XRP"]
 		else:
 			fail.append(v)
-	l = create_log(balance, amount, success, fail)
+	l = create_log(balance, bounty, amount, success, fail)
+	if pastebin_logging == True:
+		print("logging to pastebin")
+		print(p.paste(l))
 	print(l)
+	print("done.")
+	sys.exit()
 
 
 
